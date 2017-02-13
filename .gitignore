@@ -1,0 +1,8 @@
+db.sqlite3
+venv
+tcell
+tcell_agent.config
+fakesite/pages/clickjack-target.html
+.idea
+.DS_STORE
+__pycache__
