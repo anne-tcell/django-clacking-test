@@ -5,7 +5,7 @@ This is a Django app to demo clickjacking.
 ## Install
 
 0. Install Python 3.6. Other versions probably work too.
-1. `git clone [repo]`
+1. Clone this repository.
 2. `cd django-clacking-test`
 3. `pip install -r requirements.txt`
 4. Create an app on `cd4.tcell-preview.io` (<b>Admin > Applications</b>).
