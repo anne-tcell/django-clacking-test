@@ -1,0 +1,22 @@
+<script src="http://localhost:8000/tcellagent.debug.js" tcellappid="anneclickjacking-bUpQa" tcellapikey="AQECBAFeQOB8PK9MzYxQlKzIp_lCdmw7rLg_TdCG08U9HdvsJhiAWLF8vARuQhmd3YC4w-o" tcellbaseurl="https://api.tcell-preview.io/api/v1"></script>
+
+<script>window.alert('inline script')</script>
+
+<body>check console</body>
+
+<script>
+  var iframe = document.createElement('iframe');
+  iframe.width = "100px"
+  iframe.height = "100px"
+  iframe.src = "http://anneore.com"
+  try {
+    document.body.appendChild(iframe);
+  } catch(err) { // TypeError may occur if the body does not exist
+    console.log(err)
+    try {
+      document.documentElement.appendChild(iframe);
+    } catch (err2) { // We don't expect this to happen
+      throw new Error("TEST iframe could not be appended to this page.");
+    }
+  }
+</script>

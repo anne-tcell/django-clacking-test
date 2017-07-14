@@ -23,6 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name='index.html'), {'BASE_DIR': BASE_DIR}),
+    url(r'^mac$', TemplateView.as_view(template_name='mac.html')),
+    url(r'^windows$', TemplateView.as_view(template_name='windows.html')),
     url(r'^clickjack-target$', TemplateView.as_view(template_name='clickjack-target.html')),
-    url(r'^frame$', TemplateView.as_view(template_name='frame.html'))
+    url(r'^frame$', TemplateView.as_view(template_name='frame.html')),
+    url(r'^tcellagent.debug.js$', TemplateView.as_view(template_name='tcellagent.debug.js'))
 ]
